@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="730" id="KGk-i7-Jjw" customClass="SideMenuCell2" customModule="Essentials" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="730"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="730"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3RO-Wd-EeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWV-yG-9lT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_plus" translatesAutoresizingMaskIntoConstraints="NO" id="dMq-BF-jcn">
+                                        <rect key="frame" x="148.5" y="53.5" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="W7z-bX-45Y">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="23" id="ZM0-23-yZa">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nurse" translatesAutoresizingMaskIntoConstraints="NO" id="Kgy-im-uH3">
+                                        <rect key="frame" x="59" y="20" width="69.5" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Iov-b9-RF4">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_doctor" translatesAutoresizingMaskIntoConstraints="NO" id="Y0H-bf-V64">
+                                        <rect key="frame" x="191.5" y="27.5" width="83.5" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="K0u-Dg-SOF">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="95"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARE YOU A HEALTH CARE PROVIDER?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQq-hd-LVU" customClass="CoreLabel" customModule="Essentials" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="100" width="280" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="ARE YOU A HEALTH CARE PROVIDER?"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontFamily">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhD-qv-ujr" customClass="CoreButton" customModule="Essentials" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="117" width="220" height="35"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="jYM-SX-Msb">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="270"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="35" id="y8L-ik-6AP">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="POST YOUR SERVICES">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="POST YOUR SERVICES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontFamily">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="dMq-BF-jcn" firstAttribute="leading" secondItem="Kgy-im-uH3" secondAttribute="trailing" constant="20" id="2P9-s5-Qpj"/>
+                                    <constraint firstItem="Y0H-bf-V64" firstAttribute="leading" secondItem="dMq-BF-jcn" secondAttribute="trailing" constant="20" id="2VL-6U-rnK"/>
+                                    <constraint firstAttribute="height" constant="170" id="MLG-F3-ZzJ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                    <constraint firstItem="Y0H-bf-V64" firstAttribute="centerY" secondItem="dMq-BF-jcn" secondAttribute="centerY" constant="-5" id="P5Q-zd-qaY"/>
+                                    <constraint firstItem="PhD-qv-ujr" firstAttribute="top" secondItem="zQq-hd-LVU" secondAttribute="bottom" constant="5" id="QOW-X0-MnT"/>
+                                    <constraint firstItem="zQq-hd-LVU" firstAttribute="top" secondItem="Kgy-im-uH3" secondAttribute="bottom" constant="10" id="R5b-Xl-lbN"/>
+                                    <constraint firstAttribute="trailing" secondItem="zQq-hd-LVU" secondAttribute="trailing" constant="20" id="a8t-t6-JjC"/>
+                                    <constraint firstItem="zQq-hd-LVU" firstAttribute="leading" secondItem="jWV-yG-9lT" secondAttribute="leading" constant="20" id="eiY-6W-H8S"/>
+                                    <constraint firstItem="PhD-qv-ujr" firstAttribute="centerX" secondItem="jWV-yG-9lT" secondAttribute="centerX" id="fEX-VS-diw"/>
+                                    <constraint firstItem="Kgy-im-uH3" firstAttribute="centerY" secondItem="dMq-BF-jcn" secondAttribute="centerY" constant="-10" id="i9f-2C-uTF"/>
+                                    <constraint firstItem="dMq-BF-jcn" firstAttribute="centerX" secondItem="jWV-yG-9lT" secondAttribute="centerX" id="myc-er-S2E"/>
+                                    <constraint firstItem="dMq-BF-jcn" firstAttribute="top" secondItem="jWV-yG-9lT" secondAttribute="top" constant="53.5" id="wDK-Jr-vQo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="97R-aI-kU9">
+                        <rect key="frame" x="64" y="170" width="192" height="192"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="97R-aI-kU9" secondAttribute="height" multiplier="1:1" id="6W9-qZ-Dke"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="97R-aI-kU9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4eN-2i-pcT"/>
+                    <constraint firstItem="3RO-Wd-EeQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G4L-d5-hRo"/>
+                    <constraint firstAttribute="trailing" secondItem="3RO-Wd-EeQ" secondAttribute="trailing" id="N5H-ca-a7m"/>
+                    <constraint firstItem="3RO-Wd-EeQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Uan-9j-isW"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="97R-aI-kU9" secondAttribute="bottom" constant="10" id="X4w-pG-hde"/>
+                    <constraint firstItem="97R-aI-kU9" firstAttribute="top" secondItem="3RO-Wd-EeQ" secondAttribute="bottom" id="v9K-jN-BdZ"/>
+                    <constraint firstItem="97R-aI-kU9" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="xgA-9Q-pZf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnPostServices" destination="PhD-qv-ujr" id="y2l-lo-5R5"/>
+                <outlet property="btnPostView" destination="jWV-yG-9lT" id="NKS-Sg-kTg"/>
+            </connections>
+            <point key="canvasLocation" x="117.39130434782609" y="243.08035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Logo" width="1024" height="1024"/>
+        <image name="ic_doctor" width="83.333335876464844" height="110.66666412353516"/>
+        <image name="ic_nurse" width="69.333335876464844" height="115.33333587646484"/>
+        <image name="ic_plus" width="39" height="41"/>
+    </resources>
+</document>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatMSGView" customModule="Essentials" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZw-qS-qie">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-0R-TWB">
+                            <rect key="frame" x="2" y="0.0" width="410" height="1"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="imZ-WT-vTA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCG-nh-DGG">
+                            <rect key="frame" x="15" y="20" width="40" height="40"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avtar" translatesAutoresizingMaskIntoConstraints="NO" id="XI4-FB-Btc">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="37T-Bu-1rp"/>
+                                <constraint firstItem="XI4-FB-Btc" firstAttribute="top" secondItem="kCG-nh-DGG" secondAttribute="top" id="4rx-h9-c2i"/>
+                                <constraint firstAttribute="width" constant="40" id="A5V-eB-Xe7"/>
+                                <constraint firstAttribute="bottom" secondItem="XI4-FB-Btc" secondAttribute="bottom" id="LnG-6N-ce1"/>
+                                <constraint firstItem="XI4-FB-Btc" firstAttribute="leading" secondItem="kCG-nh-DGG" secondAttribute="leading" id="MHb-78-DLv"/>
+                                <constraint firstAttribute="trailing" secondItem="XI4-FB-Btc" secondAttribute="trailing" id="iAN-kE-7NX"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TvA-rC-1Q0">
+                            <rect key="frame" x="75" y="15" width="319" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write message here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mgd-nZ-tYg" customClass="CoreTextField" customModule="Essentials" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="5" width="269" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontFamily">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placehoderColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-A9-TXJ" customClass="CoreButton" customModule="Essentials" customModuleProvider="target">
+                                    <rect key="frame" x="279" y="0.0" width="40" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="wRV-c5-BE5"/>
+                                    </constraints>
+                                    <color key="tintColor" name="malibu"/>
+                                    <state key="normal" image="play.fill" catalog="system"/>
+                                </button>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="umV-Zp-2z6" customClass="CoreTextView" customModule="Essentials" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="5" width="254" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Write message here"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontFamily">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="mgd-nZ-tYg" secondAttribute="bottom" constant="5" id="2pn-wL-v7C"/>
+                                <constraint firstAttribute="bottom" secondItem="umV-Zp-2z6" secondAttribute="bottom" constant="5" id="4lu-ay-uXg"/>
+                                <constraint firstItem="mpU-A9-TXJ" firstAttribute="leading" secondItem="umV-Zp-2z6" secondAttribute="trailing" constant="10" id="MoY-jp-8PN"/>
+                                <constraint firstItem="umV-Zp-2z6" firstAttribute="top" secondItem="TvA-rC-1Q0" secondAttribute="top" constant="5" id="YCL-hr-VV6"/>
+                                <constraint firstAttribute="height" constant="50" id="c8X-R5-7Y1"/>
+                                <constraint firstItem="mgd-nZ-tYg" firstAttribute="top" secondItem="TvA-rC-1Q0" secondAttribute="top" constant="5" id="eo6-SM-KMa"/>
+                                <constraint firstAttribute="trailing" secondItem="mpU-A9-TXJ" secondAttribute="trailing" id="gQB-an-9sZ"/>
+                                <constraint firstItem="umV-Zp-2z6" firstAttribute="leading" secondItem="TvA-rC-1Q0" secondAttribute="leading" constant="15" id="he9-lk-0SW"/>
+                                <constraint firstItem="mpU-A9-TXJ" firstAttribute="leading" secondItem="mgd-nZ-tYg" secondAttribute="trailing" id="heX-PE-kdf"/>
+                                <constraint firstItem="mgd-nZ-tYg" firstAttribute="leading" secondItem="TvA-rC-1Q0" secondAttribute="leading" constant="10" id="jXA-as-HBc"/>
+                                <constraint firstAttribute="bottom" secondItem="mpU-A9-TXJ" secondAttribute="bottom" id="s6x-SX-8Yg"/>
+                                <constraint firstItem="mpU-A9-TXJ" firstAttribute="top" secondItem="TvA-rC-1Q0" secondAttribute="top" id="zpW-sc-NPY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="umV-Zp-2z6"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="kCG-nh-DGG" firstAttribute="leading" secondItem="bZw-qS-qie" secondAttribute="leading" constant="15" id="1lr-ZW-5lf"/>
+                        <constraint firstItem="Iab-0R-TWB" firstAttribute="top" secondItem="bZw-qS-qie" secondAttribute="top" id="6Bd-Gm-qEo"/>
+                        <constraint firstItem="kCG-nh-DGG" firstAttribute="centerY" secondItem="bZw-qS-qie" secondAttribute="centerY" id="7lB-ew-FRn"/>
+                        <constraint firstAttribute="trailing" secondItem="TvA-rC-1Q0" secondAttribute="trailing" constant="20" id="Jpn-tD-iRO"/>
+                        <constraint firstItem="Iab-0R-TWB" firstAttribute="leading" secondItem="bZw-qS-qie" secondAttribute="leading" constant="2" id="Qwk-A5-Y8E"/>
+                        <constraint firstItem="TvA-rC-1Q0" firstAttribute="leading" secondItem="kCG-nh-DGG" secondAttribute="trailing" constant="20" id="T4B-6K-stg"/>
+                        <constraint firstItem="TvA-rC-1Q0" firstAttribute="centerY" secondItem="bZw-qS-qie" secondAttribute="centerY" id="d7R-EW-d9u"/>
+                        <constraint firstAttribute="trailing" secondItem="Iab-0R-TWB" secondAttribute="trailing" constant="2" id="q5c-Hv-ZTE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bZw-qS-qie" secondAttribute="trailing" id="8WV-tX-cF4"/>
+                <constraint firstItem="bZw-qS-qie" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DYj-02-gwK"/>
+                <constraint firstItem="bZw-qS-qie" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Q4L-57-0dY"/>
+                <constraint firstAttribute="bottom" secondItem="bZw-qS-qie" secondAttribute="bottom" id="yyb-R9-fMz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnSend" destination="mpU-A9-TXJ" id="rNh-5T-nyW"/>
+                <outlet property="imgHeight" destination="37T-Bu-1rp" id="yJL-jO-Va2"/>
+                <outlet property="imgView" destination="XI4-FB-Btc" id="5rd-Dj-Lca"/>
+                <outlet property="imgWidth" destination="A5V-eB-Xe7" id="0Uh-Oj-aYg"/>
+                <outlet property="txtMsg" destination="mgd-nZ-tYg" id="44j-FA-3jo"/>
+                <outlet property="txtMsgView" destination="umV-Zp-2z6" id="gGF-go-bTd"/>
+            </connections>
+            <point key="canvasLocation" x="131.19999999999999" y="115.14242878560721"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avtar" width="128" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <namedColor name="malibu">
+            <color red="0.10588235294117647" green="0.67843137254901964" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
